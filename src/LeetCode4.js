@@ -1,3 +1,30 @@
+// 2021.09.01 - WED: 
+
+var array = [7,1,3,2,4,5,6];
+var array2 = [1,3,2,4];
+
+// takes an array of integers and returns the number of swaps to order them in ascending order
+function minSwaps(arr) {
+  let unsorted = [...arr];
+  let min = Math.min(...arr);
+  let swaps = 0;
+
+  for (let i=0; i<unsorted.length; i++) {
+    if (unsorted[i] !== i+min) {
+      let index = unsorted.indexOf(i+min, i); // index equals the index of the first / smallest number
+      let temp = unsorted[i]; 
+      unsorted[i] = unsorted[index];
+      unsorted[index] = temp;
+      swaps++
+    }
+  }
+  console.log("swaps:", swaps);
+  return swaps;
+}
+
+console.log("minSwaps(array):", minSwaps(array));
+// console.log("minSwaps(array2):", minSwaps(array2));
+
 // 2021.08.30 - MON:
 
 var numbers1 = [1,2,3,1,1,3];
