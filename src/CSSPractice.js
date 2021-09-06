@@ -1,3 +1,57 @@
+// 2021.09.06 - MON:
+
+// HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="main">
+<!--      <div class="first">
+       Hello
+    </div>
+    <div class="second">
+      There
+    </div> -->
+      <div class="third">
+        <h1>CSS</h1>
+      </div>
+      <div class="fourth">
+        <p id="greeting">Hello, World.</p>
+      </div>
+    <button>Click me</button>  
+  </div>
+  </div>
+</body>
+</html>
+
+// CSS: 
+
+/* .first, .second {
+  display: inline-block;
+  margin: 10px 0;
+} */
+
+.main {
+  background-color: cornflowerblue;
+  color: white;
+  font-family: Avenir;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button:hover {
+  background-color: skyblue;
+}
+
+
+
 //2021.08.02 - MON:
 
 <h2 style="color:red;">CatPhotoApp</h2>
