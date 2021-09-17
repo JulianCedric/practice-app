@@ -1,6 +1,20 @@
 /* 
 2021.09.17 - FRI:
 
+const numbers = [2,5,1,3,4,7];
+const number = 3;
+
+const numbers2 = [1,2,3,4,4,3,2,1]; 
+const number2 = 4;
+
+const numbers3 = [1,1,2,2]; 
+const number3 = 2;
+
+function shuffle(nums, n) {
+
+}
+
+console.log("shuffle(numbers, number):", shuffle(numbers, number));
 
 
 */
