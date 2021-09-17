@@ -1,6 +1,8 @@
 /* 
 2021.09.17 - FRI:
 
+*/
+
 const numbers = [2,5,1,3,4,7];
 const number = 3;
 
@@ -12,12 +14,16 @@ const number3 = 2;
 
 function shuffle(nums, n) {
 
+  let output = [];
+  let j = n; // pointer
+
+
+
+  console.log("output:", output);
+  return output;
 }
 
 console.log("shuffle(numbers, number):", shuffle(numbers, number));
-
-
-*/
 
 // 2021.09.08 - WED: 
 
