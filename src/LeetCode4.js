@@ -17,13 +17,19 @@ function shuffle(nums, n) {
   let output = [];
   let j = n; // pointer
 
-
+  for (let i=0; i<n; i++) {
+    output.push(nums[i]);
+    output.push(nums[j]);
+    j++;
+  }
 
   console.log("output:", output);
   return output;
 }
 
 console.log("shuffle(numbers, number):", shuffle(numbers, number));
+console.log("shuffle(numbers, number):", shuffle(numbers2, number2));
+console.log("shuffle(numbers, number):", shuffle(numbers3, number3));
 
 // 2021.09.08 - WED: 
 
