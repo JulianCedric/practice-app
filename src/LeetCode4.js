@@ -1,7 +1,32 @@
+// 2021.09.20 - MON:
+
 /* 
-2021.09.17 - FRI:
+
+1. Create number variable.
+2. Create sortedArray variable.
+3. Assign n variable to the highest number in the sorted array.
+4. Loop through sortedArray.
+  i. Find if each element of sortedArray is found in nums.
+    a. If it is not, then number = sortedArray[i].
+    b. Return number.
 
 */
+
+const nums1 = [3,0,1];
+const nums2 = [0,1];
+const nums3 = [9,6,4,2,3,5,7,0,1];
+const nums4 = [0];
+
+function missingNumber(nums) {
+
+}
+
+console.log("missingNumber(nums1):", missingNumber(nums1));
+// console.log("missingNumber(nums2):", missingNumber(nums2));
+// console.log("missingNumber(nums3):", missingNumber(nums3));
+// console.log("missingNumber(nums4):", missingNumber(nums4));
+
+// 2021.09.17 - FRI:
 
 const numbers = [2,5,1,3,4,7];
 const number = 3;
