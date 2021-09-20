@@ -2,6 +2,56 @@
 
 /* 
 
+1. Create output variable.
+2. Create numsCopy variable.
+3. Create sortedNums variable.
+3. Assign n variable to the highest number in the sorted array.
+4. Create arrRange variable to store each number of the range.
+5. Loop through arrRange.
+  i. Find if each element of arrRange is found in nums.
+    a. If it is not, then output = arrRange[i].
+    b. Return output.
+
+*/
+
+const nums1 = [3,0,1];
+const nums2 = [0,1];
+const nums3 = [9,6,4,2,3,5,7,0,1];
+const nums4 = [0];
+
+function missingNumber(nums) {
+
+  let output = 0;
+  let numsCopy = [...nums];
+  let numsSorted = numsCopy.sort((a,b)=> (b-a));
+  let n = Math.max(...numsSorted); 
+  console.log("n:", n);
+  let rangeArr = rangeMaker(0, n);
+
+  for (let i=0; i<rangeArr.length; i++) {
+    if (nums.indexOf(rangeArr[i]) === -1) {
+      console.log("rangeArr[i]:", rangeArr[i]);
+      output = rangeArr[i];
+      return output;
+    }
+  }
+}
+
+// console.log("missingNumber(nums1):", missingNumber(nums1));
+// console.log("missingNumber(nums2):", missingNumber(nums2));
+// console.log("missingNumber(nums3):", missingNumber(nums3));
+// console.log("missingNumber(nums4):", missingNumber(nums4));
+
+function rangeMaker(start, end) {
+  let arr = [];
+  for (let i=0; i<=end+1; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+/* 
+
 1. Create number variable.
 2. Create sortedArray variable.
 3. Assign n variable to the highest number in the sorted array.
