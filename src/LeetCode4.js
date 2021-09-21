@@ -1,3 +1,14 @@
+// 2021.09.21 - TUE:
+
+const input = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]];
+
+function islandPerimeter(grid) {
+
+
+}
+
+console.log("islandPerimeter(input):", islandPerimeter(input));
+
 // 2021.09.20 - MON:
 
 /* 
