@@ -3,8 +3,13 @@
 const input = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]];
 
 function islandPerimeter(grid) {
+  
   let perimeter = 0;
-
+  
+  for (let i=0; i<grid.length; i++) {
+    for (let j=0; j<grid[i].length; j++) {
+      
+    }
 
 }
 
