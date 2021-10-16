@@ -1,3 +1,19 @@
+// 2021.10.16: Revisited:
+
+let array = [3,8,9,4,4,1];
+let num = 3;
+
+function sum(arr, n) {
+  let sum = 0;
+  for (let i=0; i<n; i++) {
+    sum += arr[i];
+  }
+  console.log("sum:", sum);
+  return sum;
+}
+
+console.log("sum(array):", sum(array, num));
+
 // 2021.10.11: 
     // Started on 10/03
     // Completed on 10/11
